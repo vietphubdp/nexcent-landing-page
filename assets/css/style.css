@@ -219,6 +219,7 @@ a {
     margin-top: 16px;
     flex-wrap: wrap;
     gap: 127px;
+    justify-content: center;
 }
 
 .about .about-body .about-item {
@@ -227,6 +228,8 @@ a {
     background: var(--Neutral-White, #fff);
     box-shadow: 0 2px 4px 0 rgba(171, 190, 209, 0.2);
     max-width: 299px;
+    flex-basis: 299px;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;

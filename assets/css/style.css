@@ -5,6 +5,7 @@
 :root {
     --primary-color: #4caf4f;
     --neutral-silver: #f5f7fa;
+    --Neutral-Silver: #f5f7fa;
     --Neutral-D_Grey: #4d4d4d;
     --Neutral-Grey: #717171;
     --Neutral-White: #fff;
@@ -62,6 +63,10 @@ a {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 1.28; /* 128.571% */
+}
+
+.mark-up {
+    color: var(--Brand-Primary, #4caf4f);
 }
 
 .heading-center {
@@ -279,4 +284,65 @@ a {
 
 .feature .media-block {
     width: 38%;
+}
+
+/** Achievements */
+.achievements {
+    padding: 64px 0;
+    background: var(--Neutral-Silver, #f5f7fa);
+}
+
+.achievements .acv-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.achievements .acv-content {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.achievements .acv-content .subtitle {
+    color: var(--Text-Gray-900, #18191f);
+    font-size: 1.6rem;
+    line-height: 1.5; /* 150% */
+    margin-top: 8px;
+}
+
+.acv-stat .acv-stat-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.achievements .acv-stat .stat-list-top,
+.achievements .acv-stat .stat-list-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.achievements .acv-stat .stat-list-top {
+    margin-bottom: 40px;
+}
+
+.acv-stat .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 255px;
+    max-width: 100%;
+}
+
+.acv-stat .stat-item .icon {
+    height: 48px;
+    width: 48px;
+}
+
+.acv-stat .stat-item .desc {
+    color: var(--Neutral-Grey, #717171);
+    font-size: 1.6rem;
+    line-height: 1.5; /* 150% */
 }

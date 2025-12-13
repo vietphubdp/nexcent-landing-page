@@ -290,45 +290,48 @@ a {
 .achievements {
     padding: 64px 0;
     background: var(--Neutral-Silver, #f5f7fa);
+    margin-bottom: 48px;
 }
 
-.achievements .acv-body {
+.achievements .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.achievements .acv-content {
+.achievements .row .column {
     width: 47%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
-.achievements .acv-content .subtitle {
+.achievements .row .column.column-1 {
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.achievements .row .column.column-2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.achievements .row .column .desc {
     color: var(--Text-Gray-900, #18191f);
     font-size: 1.6rem;
     line-height: 1.5; /* 150% */
     margin-top: 8px;
 }
 
-.acv-stat .acv-stat-body {
+.achievements .row .child-row {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    gap: 30px;
 }
 
-.achievements .acv-stat .stat-list-top,
-.achievements .acv-stat .stat-list-bottom {
-    display: flex;
-    align-items: center;
-}
-
-.achievements .acv-stat .stat-list-top {
+.achievements .row .child-row:first-child {
     margin-bottom: 40px;
 }
 
-.acv-stat .stat-item {
+.achievements .child-row .stat-item {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -336,13 +339,7 @@ a {
     max-width: 100%;
 }
 
-.acv-stat .stat-item .icon {
-    height: 48px;
+.child-row .stat-item .icon {
     width: 48px;
-}
-
-.acv-stat .stat-item .desc {
-    color: var(--Neutral-Grey, #717171);
-    font-size: 1.6rem;
-    line-height: 1.5; /* 150% */
+    height: 48px;
 }

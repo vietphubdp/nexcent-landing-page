@@ -507,3 +507,27 @@ a {
     left: 25.5px;
     top: 205px;
 }
+
+/** End */
+.end {
+    margin-top: 174px;
+    padding: 32px 0;
+    background: var(--Neutral-Silver, #f5f7fa);
+}
+
+.end .end-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.end .heading-end {
+    color: var(--Neutral-Black, #263238);
+    text-align: center;
+    font-size: 6.4rem;
+    font-weight: 600;
+    line-height: 1.18; /* 118.75% */
+    margin-bottom: 32px;
+    width: 887px;
+    max-width: 100%;
+}

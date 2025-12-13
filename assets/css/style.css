@@ -343,3 +343,32 @@ a {
     width: 48px;
     height: 48px;
 }
+
+/** Guide */
+.guide {
+    margin-bottom: 48px;
+}
+
+.guide .guide-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.guide .guide-content {
+    width: 57%;
+}
+
+.guide .guide-content .desc {
+    color: var(--Neutral-Grey, #717171);
+    font-size: 1.4rem;
+    line-height: 1.42; /* 142.857% */
+    margin: 16px 0 32px;
+    width: 601px;
+    max-width: 100%;
+}
+
+.guide .guide-content h2 {
+    width: 601px;
+    max-width: 100%;
+}
